@@ -1,0 +1,157 @@
+.dir-describe-box{
+  padding:10px 15px;
+}
+.dir-describe-box .title{
+  width: 83px;
+  height: 29px;
+  border-radius: 15px;
+  border: 1px solid #d9dee2;
+  line-height: 28px;
+  padding-left: 10px;
+  color: #555;
+  font-size: 12px;
+}
+.dir-describe-box .title.activated{
+  color: #1fb5ff;
+  border-color: #1fb5ff;
+}
+
+
+.dir-describe-box .title >i{
+  /*color: #777;*/
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.dir-describe-box  .describe-content{
+  min-height:100px;
+  border:1px solid #d9dee2;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.dir-describe-box  .describe-content textarea{
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #222;
+  padding-left: 5px;
+  resize: none;
+  overflow:scroll;
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+
+.dir-describe-box  .describe-content .each-voice{
+  height:32px;
+  width: 60px;
+  max-width: 200px;
+  min-width: 60px;
+  background: #94D179;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+}
+
+.dir-describe-box  .describe-content .each-voice >span{
+  line-height: 32px;
+  font-size: 12px;
+  color: #222;
+  padding-left: 8px;
+}
+
+.dir-describe-box  .describe-content .each-voice >i{
+  color: #FF1919;
+  font-size: 20px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.dir-describe-box .describe-content .each-voice>div>div {
+  width:20px;
+  height:20px;
+  background:url('../asset/img/gallery/SVG/17099.svg') no-repeat scroll 0px 0px transparent;
+  background-size: 80px 20px;
+  position:absolute;
+  top:5px;
+  right:5px;
+  z-index:1;
+}
+
+.dir-describe-box  .other-type{
+  font-size: 24px;
+  color: #d9dee2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dir-describe-box  .other-type >div{
+  padding: 5px 10px;
+}
+
+.dir-describe-box  .other-type >div.activated{
+  color: #1fb5ff;
+}
+
+.dir-describe-box .photo-list{
+  margin-top:5px;
+}
+
+.dir-describe-box .photo-list img{
+  width:90%;
+}
+
+.dir-describe-box .photo-list .take-photo{
+  width:90%;
+  border:1px solid #d9dee2;
+  color: #d9dee2;
+  font-size: 24px;
+  margin: auto;
+}
+
+.dir-describe-box .photo-list .take-photo>div{
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+/*录音板*/
+.dir-record-modal{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dir-record-modal .record-box{
+  background: #fff;
+  width:100%;
+  height:340px;
+  bottom: 0;
+  position: absolute;
+  border-top:2px solid #1fb5ff;
+  padding-top: 85px;
+}
+
+.dir-record-modal .record-box >i{
+  font-size: 64px;
+  color: #D9DEE2;
+}
+
+.dir-record-modal .record-box >p{
+  font-size: 12px;
+  color: #222;
+}
+
+.dir-record-modal .record-box >div{
+  height: 36px;
+  width: 92%;
+  margin-left: 4%;
+  background: #F2F5F8;
+  border-radius: 3px;
+  bottom: 78px;
+  position: absolute;
+  line-height: 36px;
+  text-align: center;
+  font-size: 15px;
+  color: #222;
+  border: 1px solid #d9dee2;
+}

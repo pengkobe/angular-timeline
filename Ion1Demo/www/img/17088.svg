@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bebebe;
+        filter: url(#inner-shadow-1);
+      }
+
+      .cls-2 {
+        fill: #555;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+
+    <filter id="inner-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3.064" dy="-2.571" in="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.414" result="innerShadowBlur"/>
+      <feFlood flood-color="#bebebe" flood-opacity="0.45"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="multiply" in2="SourceGraphic" result="innerShadow"/>
+    </filter>
+  </defs>
+  <g>
+    <ellipse cx="28" cy="28" rx="26" ry="25" class="cls-1"/>
+    <path d="M40.000,27.000 L39.000,27.000 C37.895,27.000 37.000,26.105 37.000,25.000 L37.000,21.000 C37.000,19.895 37.895,19.000 39.000,19.000 L40.000,19.000 C41.105,19.000 42.000,19.895 42.000,21.000 L42.000,25.000 C42.000,26.105 41.105,27.000 40.000,27.000 ZM20.000,27.000 L19.000,27.000 C17.895,27.000 17.000,26.105 17.000,25.000 L17.000,21.000 C17.000,19.895 17.895,19.000 19.000,19.000 L20.000,19.000 C21.105,19.000 22.000,19.895 22.000,21.000 L22.000,25.000 C22.000,26.105 21.105,27.000 20.000,27.000 Z" class="cls-2"/>
+    <path d="M40.883,43.019 C40.523,43.019 40.176,42.825 40.001,42.486 C37.588,37.829 33.121,34.936 28.344,34.936 C23.730,34.936 19.484,37.552 16.986,41.934 C16.718,42.404 16.114,42.571 15.637,42.306 C15.161,42.040 14.992,41.443 15.261,40.972 C18.115,35.966 23.006,32.978 28.344,32.978 C33.868,32.978 39.010,36.279 41.762,41.593 C42.012,42.074 41.820,42.664 41.333,42.911 C41.188,42.984 41.034,43.019 40.883,43.019 Z" class="cls-2"/>
+    <path d="M6.887,23.000 L4.805,23.000 C6.840,15.462 12.601,9.455 20.000,7.093 L20.000,9.221 C13.711,11.447 8.806,16.577 6.887,23.000 Z" class="cls-3"/>
+  </g>
+</svg>

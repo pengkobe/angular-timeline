@@ -1,0 +1,7 @@
+<ion-modal-view  class="dir-record-modal" ng-click="closeRecordModal()">
+  <div class="record-box text-center">
+    <i class="icon ion-mic-a" ng-show='recordTitle == "松开保存"'></i>
+    <p ng-show='recordTitle == "松开保存"'>手指上滑，取消保存</p>
+    <div on-hold="startRecord()" on-release='stopAndSaveRecord()' on-drag-up='cancelRecord()'>{{recordTitle}}</div>
+  </div>
+</ion-modal-view>

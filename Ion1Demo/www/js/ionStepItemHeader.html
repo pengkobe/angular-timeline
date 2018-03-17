@@ -1,0 +1,20 @@
+<div class="ionic-step-header">
+    <div class="ionic-step-header-icon" ng-class="{'todo':state==='todo','doing':state==='doing','done':state==='done'}">
+        <div ng-transclude></div>
+        <img ng-src="{{headIcon}}">
+    </div>
+    <div class="ionic-step-header-text-container">
+        <div class="ionic-step-header-text ionic-step-header-title">{{title}}</div>
+        <div ng-if="tag" class="ionic-step-header-text ionic-step-header-tag"
+          ng-class="{'tag-blue':finished===true,'tag-red':finished===false}" >
+            <span>{{tag}}</span>
+        </div>
+        <div class="ionic-step-header-text ionic-step-header-username" ng-if="username">
+            <span>{{username}}</span>
+        </div>
+        <div class="ionic-step-header-text ionic-step-header-time" ng-if="time">
+            <span>{{time}}</span>
+        </div>
+
+    </div>
+</div>

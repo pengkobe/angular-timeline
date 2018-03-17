@@ -1,0 +1,21 @@
+<div *ngIf="mode === 'vertical'" class="ionic-stepper-vertical-container">
+   <ng-container *ngFor="let step of _steps; let i = index; let isLast = last">
+       <ion-step-header [index]="i"
+                          [icon]="step.icon"
+                          [errorIcon]="step.errorIcon"
+                          [label]="step.label"
+                          [status]="step.status"
+                          [active]="i <= selectedIndex"
+                          [description]="step.description">
+       </ion-step-header>
+       <div class="ionic-stepper-vertical-content-container"
+            [class.ionic-stepper-vertical-line]="!isLast">
+           <div class="ionic-stepper-vertical-content"
+                [@verticalStepTransition]="getAnimationDirection(i)">
+                <div class="ionic-vertical-content">
+                    <ng-container [ngTemplateOutlet]="step.content"></ng-container>
+                </div>
+           </div>
+       </div>
+   </ng-container>
+</div>

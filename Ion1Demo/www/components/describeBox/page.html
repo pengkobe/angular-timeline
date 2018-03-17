@@ -1,0 +1,36 @@
+<div class="dir-describe-box">
+  <div class="title" ng-click="openOrClose()">{{title || '补充描述'}}
+    <i class="icon ion-ios-arrow-up" ng-show="!contentOpen"></i>
+    <i class="icon ion-ios-arrow-down" ng-show="contentOpen"></i>
+  </div>
+  <div ng-show="contentOpen">
+    <div class="describe-content">
+    <textarea ng-model="describeContent.title" placeholder="请描述您的故障详情" rows=1 cols=40
+              ng-focus="autoTextArea($event)" ng-blur="clearAuto()"></textarea>
+
+      <div class="each-voice" ng-repeat="data in describeContent.voiceList track by $index"
+           ng-click="playVoice(data)" ng-style="data.eachVoiceWidth">
+        <div style=" position:relative;">
+          <div ng-style="data.haoroomsStyle"></div>
+        </div>
+        <span>{{data.time}}"</span>
+        <i class="icon ion-ios-close" ng-click="deleteRecord(data,$index);$event.stopPropagation();"></i>
+      </div>
+      <!--<voice-items voice-list="describeContent.voiceList" can-delete=true></voice-items>-->
+    </div>
+
+    <div class="other-type">
+      <div class="voice" ng-click="openRecord()"><i class="icon ion-mic-a"></i></div>
+      <div class="photo" ng-click="openCamera()"><i class="icon ion-camera"></i></div>
+    </div>
+
+    <div class="row photo-list" ng-if="describeContent.photoList.length >0" img-viewer="describeContent.photoList" can-delete="true">
+      <div class="col-20 text-center" ng-repeat="photo in describeContent.photoList track by $index">
+        <img height-equal-width ng-src="{{photo.url}}" img-viewer-index="{{$index}}">
+      </div>
+      <div class="col-20 text-center" ng-click="openCamera()">
+        <div class="take-photo" height-equal-width><div><i class="icon ion-camera"></i></div></div>
+      </div>
+    </div>
+  </div>
+</div>
